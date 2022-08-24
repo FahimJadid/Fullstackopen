@@ -1,0 +1,25 @@
+title New Note Single Page App
+
+note over browser:
+1. Change in the form-tag,
+the form has no action or method attributes
+2. Browser sends only one request to the server.
+3. POST request to the address new_note_spa
+contains new note as JSON-data containing 
+both content and date.
+4. Content-Type: JSON format
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over server:
+No redirect from server, browser stays on the same page, 
+and sends no further HTTP requests.
+Response: {"message":"note created"}
+does not send the form data, 
+instead uses JavaScript fetched from server
+end note
+
+server-->browser: data.json & status code:201
+
+

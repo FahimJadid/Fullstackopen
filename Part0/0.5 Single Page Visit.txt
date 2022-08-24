@@ -1,0 +1,20 @@
+title Single Page Visit
+
+note over browser:
+SPA don't fetch all pages separately from server
+but instead comprise only one HTML page fetched 
+from server.
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+server-->browser: HTML - code & status code:200
+server-->browser: main.css & status code:200
+server-->browser: spa.js & status code:200
+server-->browser: data.json & status code:200
+
+note over browser:
+Then contents are manipulated with 
+JS that executes in the browser.
+end note
+
+
